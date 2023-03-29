@@ -1,0 +1,23 @@
+name: 'NPM Publish'
+description: 'Publish Provenance Protobuf API to NPM'
+inputs:
+  api-version:
+    description: 'Provenance Release Version'
+    required: true
+    default: '1.15.0'
+  npm-token:
+    description: 'NPM publishing token'
+    required: true
+    default: ''
+  tag:
+    description: 'NPM build tag (alpha, beta)'
+    required: false
+    default: ''
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.api-version }}
+    - ${{ inputs.npm-token }}
+    - ${{ inputs.tag }}
