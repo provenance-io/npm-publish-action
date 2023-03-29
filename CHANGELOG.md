@@ -36,3 +36,4 @@ Ref: https://keepachangelog.com/en/1.0.0/
 ### Improvements
 
 - [PR 1](https://github.com/provenance-io/npm-publish-action/pull/1) Build NPM publishing action
+- (docs) [PR 2](https://github.com/provenance-io/npm-publish-action/pull/2) Add usage instructions
